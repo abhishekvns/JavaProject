@@ -17,6 +17,7 @@ public class EmployeeController {
 		return new ModelAndView("welcome", "msg", "Welcome to JSP page");
 	}
 	
+	//get the employee
 	@RequestMapping(name="/emp",method = RequestMethod.GET)
 	public ModelAndView getEmployee() {
 		return new ModelAndView("emp","command",new Employee());
